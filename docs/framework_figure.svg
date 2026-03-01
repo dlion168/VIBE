@@ -1,0 +1,172 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 780 310" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif">
+  <defs>
+    <marker id="arr" markerWidth="7" markerHeight="5" refX="6" refY="2.5" orient="auto">
+      <polygon points="0 0, 7 2.5, 0 5" fill="#778899"/>
+    </marker>
+    <filter id="sh" x="-2%" y="-3%" width="104%" height="110%">
+      <feDropShadow dx="0.4" dy="1.2" stdDeviation="2" flood-color="#00000016"/>
+    </filter>
+  </defs>
+
+  <rect width="780" height="310" fill="#FFFFFF"/>
+
+  <!-- ============ BOX 1: Speech Input ============ -->
+  <g filter="url(#sh)">
+    <rect x="14" y="24" width="142" height="118" rx="6" fill="white" stroke="#B8C6D6" stroke-width="0.7"/>
+    <rect x="14" y="24" width="142" height="28" rx="6" fill="#4A6FA5"/>
+    <rect x="14" y="45" width="142" height="7" fill="#4A6FA5"/>
+    <text x="85" y="45" text-anchor="middle" font-size="14" font-weight="600" fill="white">Speech  𝒳</text>
+  </g>
+  <!-- Waveform -->
+  <g transform="translate(28, 60)" stroke="#4A6FA5" stroke-width="2.4" fill="none" stroke-linecap="round">
+    <line x1="0" y1="12" x2="0" y2="12"/><line x1="6" y1="6" x2="6" y2="18"/>
+    <line x1="12" y1="1" x2="12" y2="23"/><line x1="18" y1="7" x2="18" y2="17"/>
+    <line x1="24" y1="3" x2="24" y2="21"/><line x1="30" y1="8" x2="30" y2="16"/>
+  </g>
+  <text x="68" y="72" font-size="12" font-weight="600" fill="#333">Real-world</text>
+  <text x="68" y="86" font-size="12" font-weight="600" fill="#333">recordings</text>
+  <!-- Dimension tags -->
+  <g transform="translate(26, 96)">
+    <rect x="0" y="0" width="58" height="19" rx="3.5" fill="#EBF0F7" stroke="#C5D3E8" stroke-width="0.4"/>
+    <text x="29" y="14" text-anchor="middle" font-size="10" fill="#4A6FA5" font-weight="600">Gender</text>
+    <rect x="62" y="0" width="58" height="19" rx="3.5" fill="#E8EFF8" stroke="#B0C4DE" stroke-width="0.4"/>
+    <text x="91" y="14" text-anchor="middle" font-size="10" fill="#3A5D8C" font-weight="600">Accent</text>
+  </g>
+  <!-- Example in dashed box -->
+  <rect x="26" y="121" width="118" height="17" rx="3" fill="#EBF2FC" stroke="#A8C4E8" stroke-width="0.5" stroke-dasharray="3,1.5"/>
+  <text x="85" y="133" text-anchor="middle" font-size="9" fill="#5A7FAA" font-style="italic">e.g. 🎤 female speaker</text>
+
+  <!-- ============ BOX 2: Task Prompt ============ -->
+  <g filter="url(#sh)">
+    <rect x="14" y="158" width="142" height="130" rx="6" fill="white" stroke="#B8C6D6" stroke-width="0.7"/>
+    <rect x="14" y="158" width="142" height="28" rx="6" fill="#E8913A"/>
+    <rect x="14" y="179" width="142" height="7" fill="#E8913A"/>
+    <text x="85" y="179" text-anchor="middle" font-size="14" font-weight="600" fill="white">Prompt  𝒫</text>
+  </g>
+  <text x="28" y="201" font-size="10" fill="#666">📖 Story Generation</text>
+  <text x="28" y="215" font-size="10" fill="#666">💡 Advisory</text>
+  <text x="28" y="229" font-size="10" fill="#666">💼 Candidate Review</text>
+  <text x="28" y="243" font-size="10" fill="#666">🎬 Hollywood Casting</text>
+  <text x="28" y="257" font-size="10" fill="#666">🛍 Personal Shopper</text>
+  <!-- Example prompt -->
+  <rect x="26" y="264" width="118" height="20" rx="3" fill="#FFF8F0" stroke="#F0D0A0" stroke-width="0.5" stroke-dasharray="3,1.5"/>
+  <text x="32" y="274" font-size="7.5" fill="#8B6930" font-style="italic">"Suggest 3 hobbies this</text>
+  <text x="32" y="282" font-size="7.5" fill="#8B6930" font-style="italic"> person might enjoy."</text>
+
+  <!-- ============ MERGE ARROWS ============ -->
+  <line x1="162" y1="88" x2="174" y2="88" stroke="#778899" stroke-width="1.3"/>
+  <line x1="174" y1="88" x2="174" y2="155" stroke="#778899" stroke-width="1.3"/>
+  <line x1="162" y1="224" x2="174" y2="224" stroke="#778899" stroke-width="1.3"/>
+  <line x1="174" y1="224" x2="174" y2="155" stroke="#778899" stroke-width="1.3"/>
+  <circle cx="174" cy="155" r="3.5" fill="#778899"/>
+  <line x1="178" y1="155" x2="196" y2="155" stroke="#778899" stroke-width="1.5" marker-end="url(#arr)"/>
+
+  <!-- ============ BOX 3: LALM ============ -->
+  <g filter="url(#sh)">
+    <rect x="204" y="50" width="156" height="210" rx="6" fill="white" stroke="#B8C6D6" stroke-width="0.7"/>
+    <rect x="204" y="50" width="156" height="30" rx="6" fill="#2C3E50"/>
+    <rect x="204" y="73" width="156" height="7" fill="#2C3E50"/>
+    <text x="282" y="73" text-anchor="middle" fill="white">
+      <tspan font-size="14" font-weight="600">LALM  M</tspan><tspan font-size="10" dy="3">θ</tspan>
+    </text>
+  </g>
+  <text x="282" y="99" text-anchor="middle" font-size="11.5" fill="#999">12 models evaluated</text>
+
+  <!-- Open-ended highlight -->
+  <rect x="218" y="108" width="128" height="24" rx="4" fill="#FFF3E0" stroke="#FFCC80" stroke-width="0.5"/>
+  <text x="282" y="124" text-anchor="middle" font-size="10.5" fill="#E65100" font-weight="600">Open-ended generation</text>
+
+  <!-- Example output -->
+  <rect x="218" y="140" width="128" height="112" rx="4" fill="#F4FBF4" stroke="#A8D8A8" stroke-width="0.5" stroke-dasharray="3,1.5"/>
+  <text x="224" y="157" font-size="9.5" font-weight="600" fill="#3D7A3D">
+    <tspan>𝒴</tspan><tspan font-size="7" dy="2">text</tspan><tspan font-size="9.5" dy="-2"> (free-form):</tspan>
+  </text>
+  <text x="224" y="173" font-size="9.5" fill="#4A8A4A" font-style="italic">"Based on the warm</text>
+  <text x="224" y="187" font-size="9.5" fill="#4A8A4A" font-style="italic"> tone, I'd recommend:</text>
+  <text x="224" y="203" font-size="9.5" fill="#4A8A4A" font-style="italic"> 1. Yoga or meditation</text>
+  <text x="224" y="217" font-size="9.5" fill="#4A8A4A" font-style="italic"> 2. Cooking or baking</text>
+  <text x="224" y="231" font-size="9.5" fill="#4A8A4A" font-style="italic"> 3. Journaling / writing"</text>
+
+  <!-- ============ ARROW LALM → Extractor ============ -->
+  <line x1="366" y1="155" x2="388" y2="155" stroke="#778899" stroke-width="1.5" marker-end="url(#arr)"/>
+  <text x="377" y="147" text-anchor="middle" font-size="10" fill="#AAA" font-style="italic">
+    <tspan>𝒴</tspan><tspan font-size="7" dy="1.5">text</tspan>
+  </text>
+
+  <!-- ============ BOX 4: EXTRACTOR ============ -->
+  <g filter="url(#sh)">
+    <rect x="396" y="50" width="156" height="210" rx="6" fill="white" stroke="#B8C6D6" stroke-width="0.7"/>
+    <rect x="396" y="50" width="156" height="30" rx="6" fill="#5B8C5A"/>
+    <rect x="396" y="73" width="156" height="7" fill="#5B8C5A"/>
+    <text x="474" y="73" text-anchor="middle" fill="white">
+      <tspan font-size="14" font-weight="600">Extractor  E</tspan><tspan font-size="10" dy="3">ϕ</tspan>
+    </text>
+  </g>
+  <text x="474" y="99" text-anchor="middle" font-size="11.5" fill="#999">LLM-based</text>
+
+  <text x="474" y="118" text-anchor="middle" font-size="11.5" fill="#444">
+    <tspan>𝒴</tspan><tspan font-size="8" dy="1.5">text</tspan><tspan font-size="11.5" dy="-1.5"> → 𝒮 = {a₁, a₂, …, aₙ}</tspan>
+  </text>
+
+  <!-- Extracted table -->
+  <g transform="translate(410, 130)">
+    <rect x="0" y="0" width="128" height="22" rx="2.5" fill="#5B8C5A" opacity="0.1"/>
+    <text x="8" y="16" font-size="10.5" font-weight="600" fill="#3D6B3D">Attribute</text>
+    <text x="78" y="16" font-size="10.5" font-weight="600" fill="#3D6B3D">Value</text>
+    <line x1="0" y1="23" x2="128" y2="23" stroke="#D5E8D5" stroke-width="0.4"/>
+    <text x="8" y="40" font-size="10.5" fill="#666">Activity 1</text>
+    <rect x="76" y="28" width="50" height="16" rx="2" fill="#E8F5E9"/>
+    <text x="80" y="41" font-size="10" fill="#2E7D32">yoga</text>
+    <line x1="0" y1="46" x2="128" y2="46" stroke="#EEF4EE" stroke-width="0.3"/>
+    <text x="8" y="63" font-size="10.5" fill="#666">Activity 2</text>
+    <rect x="76" y="51" width="50" height="16" rx="2" fill="#E8F5E9"/>
+    <text x="80" y="64" font-size="10" fill="#2E7D32">cooking</text>
+    <line x1="0" y1="69" x2="128" y2="69" stroke="#EEF4EE" stroke-width="0.3"/>
+    <text x="8" y="86" font-size="10.5" fill="#666">Activity 3</text>
+    <rect x="76" y="74" width="50" height="16" rx="2" fill="#E8F5E9"/>
+    <text x="80" y="87" font-size="10" fill="#2E7D32">journaling</text>
+  </g>
+
+  <!-- Repeat hint -->
+  <text x="474" y="234" text-anchor="middle" font-size="9" fill="#5B8C5A" font-style="italic">Repeat for each utterance;</text>
+  <text x="474" y="247" text-anchor="middle" font-size="9" fill="#5B8C5A" font-style="italic">output structured 𝒮 per sample</text>
+
+  <!-- ============ ARROW Extractor → Quantification ============ -->
+  <line x1="558" y1="155" x2="580" y2="155" stroke="#778899" stroke-width="1.5" marker-end="url(#arr)"/>
+  <text x="569" y="147" text-anchor="middle" font-size="10" fill="#AAA" font-style="italic">𝒮</text>
+
+  <!-- ============ BOX 5: BIAS QUANTIFICATION ============ -->
+  <g filter="url(#sh)">
+    <rect x="588" y="50" width="160" height="210" rx="6" fill="white" stroke="#B8C6D6" stroke-width="0.7"/>
+    <rect x="588" y="50" width="160" height="30" rx="6" fill="#8B5E9B"/>
+    <rect x="588" y="73" width="160" height="7" fill="#8B5E9B"/>
+    <text x="668" y="73" text-anchor="middle" font-size="14" font-weight="600" fill="white">Bias Score</text>
+  </g>
+
+  <!-- Step 1: Aggregate -->
+  <text x="668" y="99" text-anchor="middle" font-size="10.5" font-weight="600" fill="#6A3D7D">① Aggregate per group</text>
+  <text x="668" y="114" text-anchor="middle" font-size="10" fill="#888">
+    <tspan>𝒮 → P</tspan><tspan font-size="7" dy="1.5">g</tspan><tspan font-size="10" dy="-1.5">(v) for each g ∈ G</tspan>
+  </text>
+
+  <!-- Step 2: nTVD formula -->
+  <text x="668" y="134" text-anchor="middle" font-size="10.5" font-weight="600" fill="#6A3D7D">② Compute nTVD</text>
+  <rect x="604" y="141" width="128" height="48" rx="4" fill="#F8F5FF" stroke="#D4C5E8" stroke-width="0.5"/>
+  <!-- nTVD = 100 × fraction -->
+  <text x="614" y="165" font-size="11" fill="#5B3E8B">nTVD =</text>
+  <text x="650" y="165" font-size="11" fill="#5B3E8B">100 ×</text>
+  <!-- Fraction: numerator -->
+  <text x="700" y="157" text-anchor="middle" font-size="10.5" fill="#5B3E8B">TVD(a)</text>
+  <!-- Fraction line -->
+  <line x1="676" y1="161" x2="724" y2="161" stroke="#5B3E8B" stroke-width="0.8"/>
+  <!-- Fraction: denominator -->
+  <text x="700" y="174" text-anchor="middle" font-size="10.5" fill="#5B3E8B">1 − 1/|G|</text>
+  <text x="668" y="184" text-anchor="middle" font-size="8.5" fill="#8B7AAB">∈ [0, 100]</text>
+
+  <!-- Step 3: Significance -->
+  <text x="668" y="204" text-anchor="middle" font-size="10.5" font-weight="600" fill="#6A3D7D">③ Statistical test</text>
+  <rect x="604" y="210" width="128" height="40" rx="4" fill="#FDFAFF" stroke="#E8D5F0" stroke-width="0.4"/>
+  <text x="668" y="226" text-anchor="middle" font-size="10" fill="#777">Permutation (10K iter.)</text>
+  <text x="668" y="242" text-anchor="middle" font-size="10" fill="#8B5E9B">*p &lt; .05   **p &lt; .001</text>
+
+</svg>
