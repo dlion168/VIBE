@@ -1,0 +1,6 @@
+[submodule "run_PARADE/PARADE_audio"]
+	path = run_PARADE/PARADE_audio
+	url = https://huggingface.co/datasets/UCSC-VLAA/PARADE_audio/
+[submodule "run_spoken_stereoset/spoken_stereoset"]
+	path = run_spoken_stereoset/spoken_stereoset
+	url = https://github.com/dlion168/spoken_stereoset.git

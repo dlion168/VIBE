@@ -1,0 +1,32 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+
+# Results & generated data
+results/
+
+# src
+src/desta
+
+# Gemini cache/jobs
+gemini_file_cache.json
+gemini_jobs.jsonl
+
+# Batch files
+batch_input_*.jsonl
+
+# IDE & OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# Environment
+.env
+*.env
+venv/
+.venv/
+
+# Jupyter
+.ipynb_checkpoints/
